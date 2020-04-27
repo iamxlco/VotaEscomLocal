@@ -15,6 +15,7 @@ public class VotaEscomLocal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        perfilAdmin.main(args);
     }
     
 }
