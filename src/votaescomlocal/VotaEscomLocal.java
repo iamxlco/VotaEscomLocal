@@ -16,7 +16,8 @@ public class VotaEscomLocal {
      */
     public static void main(String[] args) {
         //perfilAdmin.main(args);
-        Usuarios.main(args);
+        //Usuarios.main(args);
+        VotacionEspecifica.main(args);
     }
     
 }
