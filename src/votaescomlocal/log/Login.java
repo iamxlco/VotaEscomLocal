@@ -172,14 +172,16 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        //BOTON DE LOGIN
-//        ModuloGeneral modulogeneral = new ModuloGeneral();
-//        modulogeneral.setVisible(true);
-//        this.dispose();
-        
-        perfilAdmin admin = new perfilAdmin();
-        admin.setVisible(true);
-        this.dispose();
+        String nickname = jTextField1.getText();
+        if(nickname.equals("Usuario")){
+            ModuloGeneral modulogeneral = new ModuloGeneral();
+            modulogeneral.setVisible(true);
+            this.dispose();
+        }else if(nickname.equals("Admin")){
+            perfilAdmin admin = new perfilAdmin();
+            admin.setVisible(true);
+            this.dispose();
+        }   
         
     }//GEN-LAST:event_jButton1ActionPerformed
 

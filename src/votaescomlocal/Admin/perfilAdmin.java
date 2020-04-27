@@ -5,6 +5,8 @@
  */
 package votaescomlocal.Admin;
 
+import votaescomlocal.log.Login;
+
 /**
  *
  * @author axel_
@@ -177,8 +179,8 @@ public class perfilAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_votacionesActionPerformed
 
     private void cerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cerrarSesionActionPerformed
-        perfilAdmin admin = new perfilAdmin();
-        admin.setVisible(true);
+        Login cerrarsesion = new Login();
+        cerrarsesion.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_cerrarSesionActionPerformed
 
