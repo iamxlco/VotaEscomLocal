@@ -5,6 +5,8 @@
  */
 package votaescomlocal;
 
+import votaescomlocal.Admin.modificarDatos;
+
 /**
  *
  * @author axel_

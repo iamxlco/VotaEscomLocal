@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package votaescomlocal;
+package votaescomlocal.Admin;
 
 /**
  *
@@ -61,8 +61,6 @@ public class RegistrarCandidato extends javax.swing.JFrame {
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(label8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
-
-        label8.getAccessibleContext().setAccessibleName("Candidato");
 
         jPanel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(24, 153, 240)));
 
@@ -226,18 +224,8 @@ public class RegistrarCandidato extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JTextField jTextField1;
-    private java.awt.Label label2;
-    private java.awt.Label label4;
-    private java.awt.Label label5;
-    private java.awt.Label label6;
-    private java.awt.Label label7;
     private java.awt.Label label8;
     private java.awt.TextArea textArea1;
     private java.awt.TextArea textArea2;

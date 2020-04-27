@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package votaescomlocal;
+package votaescomlocal.Admin;
 
 /**
  *
@@ -37,7 +37,6 @@ public class perfilAdmin extends javax.swing.JFrame {
         votaciones = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1200, 700));
         setResizable(false);
 
         jPanel2.setBackground(new java.awt.Color(16, 104, 163));

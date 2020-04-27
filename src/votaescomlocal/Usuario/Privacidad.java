@@ -1,5 +1,7 @@
 
-package votaescomlocal;
+package votaescomlocal.Usuario;
+
+import votaescomlocal.Login.Login;
 
 public class Privacidad extends javax.swing.JFrame {
 
@@ -29,8 +31,6 @@ public class Privacidad extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(0, 0));
-        setPreferredSize(new java.awt.Dimension(1200, 700));
         setSize(new java.awt.Dimension(1200, 700));
 
         jPanel2.setBackground(new java.awt.Color(16, 104, 163));

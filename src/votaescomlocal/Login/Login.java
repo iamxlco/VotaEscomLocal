@@ -3,10 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package votaescomlocal;
+package votaescomlocal.Login;
 
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
+import votaescomlocal.Usuario.ModuloGeneral;
+import votaescomlocal.Register.Registro;
 
 public class Login extends javax.swing.JFrame {
     public Login() {
