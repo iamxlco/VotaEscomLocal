@@ -108,6 +108,8 @@ public class Registro extends javax.swing.JFrame {
         jComboBox1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 204, 255)));
         jComboBox1.setPreferredSize(new java.awt.Dimension(130, 45));
 
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
         jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel1.setText("NFC");
 
