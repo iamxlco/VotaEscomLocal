@@ -33,6 +33,8 @@ public class perfilAdmin extends javax.swing.JFrame {
         cerrarSesion = new javax.swing.JButton();
         iconoVE = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        usuarios = new javax.swing.JButton();
+        votaciones = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1300, 900));
@@ -91,6 +93,42 @@ public class perfilAdmin extends javax.swing.JFrame {
         jLabel1.setText("No hay votación activa por el momento");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
+        usuarios.setBackground(new java.awt.Color(96, 182, 240));
+        usuarios.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        usuarios.setForeground(new java.awt.Color(255, 255, 255));
+        usuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Usuarios72.png"))); // NOI18N
+        usuarios.setText("USUARIOS");
+        usuarios.setBorderPainted(false);
+        usuarios.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        usuarios.setMargin(new java.awt.Insets(14, 14, 14, 14));
+        usuarios.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Usuarios72.png"))); // NOI18N
+        usuarios.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Usuarios96.png"))); // NOI18N
+        usuarios.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        usuarios.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        usuarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                usuariosActionPerformed(evt);
+            }
+        });
+
+        votaciones.setBackground(new java.awt.Color(96, 182, 240));
+        votaciones.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        votaciones.setForeground(new java.awt.Color(255, 255, 255));
+        votaciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/votaciones72.png"))); // NOI18N
+        votaciones.setText("VOTACIONES");
+        votaciones.setBorderPainted(false);
+        votaciones.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        votaciones.setMargin(new java.awt.Insets(14, 14, 14, 14));
+        votaciones.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/votaciones72.png"))); // NOI18N
+        votaciones.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/votaciones88.png"))); // NOI18N
+        votaciones.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        votaciones.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        votaciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                votacionesActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -98,7 +136,12 @@ public class perfilAdmin extends javax.swing.JFrame {
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 438, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(usuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(108, 108, 108)
+                        .addComponent(votaciones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 438, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(374, 374, 374))
         );
         layout.setVerticalGroup(
@@ -107,11 +150,23 @@ public class perfilAdmin extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(139, 139, 139)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(371, Short.MAX_VALUE))
+                .addGap(104, 104, 104)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(usuarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(votaciones, javax.swing.GroupLayout.DEFAULT_SIZE, 141, Short.MAX_VALUE))
+                .addContainerGap(126, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void usuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuariosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_usuariosActionPerformed
+
+    private void votacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_votacionesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_votacionesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -155,5 +210,7 @@ public class perfilAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     private java.awt.Label label1;
+    private javax.swing.JButton usuarios;
+    private javax.swing.JButton votaciones;
     // End of variables declaration//GEN-END:variables
 }
