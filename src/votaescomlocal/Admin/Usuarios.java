@@ -69,6 +69,11 @@ public class Usuarios extends javax.swing.JFrame {
         iconoAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconUsuarios.png"))); // NOI18N
 
         iconoVE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconoRegresa.png"))); // NOI18N
+        iconoVE.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                iconoVEMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -246,6 +251,12 @@ public class Usuarios extends javax.swing.JFrame {
     private void btnModificarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarUsuarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnModificarUsuarioActionPerformed
+
+    private void iconoVEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iconoVEMouseClicked
+        perfilAdmin admin = new perfilAdmin();
+        admin.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_iconoVEMouseClicked
 
     /**
      * @param args the command line arguments

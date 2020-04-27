@@ -53,6 +53,11 @@ public class perfilAdmin extends javax.swing.JFrame {
         cerrarSesion.setText("Cerrar Sesión");
         cerrarSesion.setContentAreaFilled(false);
         cerrarSesion.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        cerrarSesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cerrarSesionActionPerformed(evt);
+            }
+        });
 
         iconoVE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/LogoVE.png"))); // NOI18N
 
@@ -162,12 +167,20 @@ public class perfilAdmin extends javax.swing.JFrame {
     private void usuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuariosActionPerformed
         Usuarios users = new Usuarios();
         users.setVisible(true);
-        users.dispose();
+        this.dispose();
     }//GEN-LAST:event_usuariosActionPerformed
 
     private void votacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_votacionesActionPerformed
-        // TODO add your handling code here:
+        Votaciones votes = new Votaciones();
+        votes.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_votacionesActionPerformed
+
+    private void cerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cerrarSesionActionPerformed
+        perfilAdmin admin = new perfilAdmin();
+        admin.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_cerrarSesionActionPerformed
 
     /**
      * @param args the command line arguments

@@ -49,6 +49,11 @@ public class Votaciones extends javax.swing.JFrame {
         label1.setText("VOTACIONES");
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconoRegresa.png"))); // NOI18N
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
+        });
 
         iconoAdmin1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/IconoVotacionesTitulo.png"))); // NOI18N
 
@@ -171,6 +176,12 @@ public class Votaciones extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+        perfilAdmin admin = new perfilAdmin();
+        admin.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel9MouseClicked
 
     /**
      * @param args the command line arguments
