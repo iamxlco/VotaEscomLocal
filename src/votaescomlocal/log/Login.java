@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package votaescomlocal.log;
+import votaescomlocal.Admin.perfilAdmin;
 import votaescomlocal.Usuario.ModuloGeneral;
 import votaescomlocal.Register.Registro;
 
@@ -172,8 +173,12 @@ public class Login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         //BOTON DE LOGIN
-        ModuloGeneral modulogeneral = new ModuloGeneral();
-        modulogeneral.setVisible(true);
+//        ModuloGeneral modulogeneral = new ModuloGeneral();
+//        modulogeneral.setVisible(true);
+//        this.dispose();
+        
+        perfilAdmin admin = new perfilAdmin();
+        admin.setVisible(true);
         this.dispose();
         
     }//GEN-LAST:event_jButton1ActionPerformed
