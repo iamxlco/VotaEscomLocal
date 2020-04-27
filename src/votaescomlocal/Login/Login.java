@@ -35,6 +35,7 @@ public class Login extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(16, 104, 163));
 
+        label1.setAlignment(java.awt.Label.CENTER);
         label1.setFont(new java.awt.Font("Arial", 0, 36)); // NOI18N
         label1.setForeground(new java.awt.Color(255, 255, 255));
         label1.setText("Bienvenido");
