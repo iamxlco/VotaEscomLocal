@@ -5,7 +5,7 @@
  */
 package votaescomlocal.Usuario;
 
-import votaescomlocal.Login.Login;
+import votaescomlocal.log.Login;
 
 public class ModuloGeneral extends javax.swing.JFrame {
     public ModuloGeneral() {
