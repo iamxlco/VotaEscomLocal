@@ -5,7 +5,7 @@
  */
 package votaescomlocal.Usuario;
 
-import votaescomlocal.Login.Login;
+import votaescomlocal.log.Login;
 public class EnviarComentarios extends javax.swing.JFrame {
     public EnviarComentarios() {
         initComponents();
