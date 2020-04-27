@@ -5,7 +5,7 @@
  */
 package votaescomlocal.Register;
 
-import votaescomlocal.Login.Login;
+import votaescomlocal.log.Login;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
