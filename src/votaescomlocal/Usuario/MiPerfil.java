@@ -259,7 +259,7 @@ public class MiPerfil extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel11MouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        CambiarContraseña Cambiarcontraseña = new CambiarContraseña();
+        Cambiarcontra Cambiarcontraseña = new Cambiarcontra();
         Cambiarcontraseña.setVisible(true);
     }//GEN-LAST:event_jButton1MouseClicked
 
