@@ -1,7 +1,7 @@
 
 package votaescomlocal.Usuario;
 
-import votaescomlocal.log.Login;
+import votaescomlocal.Login.Login;
 
 public class Privacidad extends javax.swing.JFrame {
 
