@@ -33,7 +33,6 @@ public class perfilAdmin extends javax.swing.JFrame {
         cerrarSesion = new javax.swing.JButton();
         iconoVE = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        ussers = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1300, 900));
@@ -92,24 +91,6 @@ public class perfilAdmin extends javax.swing.JFrame {
         jLabel1.setText("No hay votación activa por el momento");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        ussers.setBackground(new java.awt.Color(96, 182, 240));
-        ussers.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        ussers.setForeground(new java.awt.Color(255, 255, 255));
-        ussers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btnUsuarios72.png"))); // NOI18N
-        ussers.setText("USUARIOS");
-        ussers.setBorderPainted(false);
-        ussers.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        ussers.setMargin(new java.awt.Insets(14, 14, 14, 14));
-        ussers.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btnUsuarios72.png"))); // NOI18N
-        ussers.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btnUsuarios96.png"))); // NOI18N
-        ussers.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        ussers.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        ussers.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ussersActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -119,10 +100,6 @@ public class perfilAdmin extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 438, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(374, 374, 374))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(412, 412, 412)
-                .addComponent(ussers, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -130,17 +107,11 @@ public class perfilAdmin extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(139, 139, 139)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
-                .addComponent(ussers, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(124, 124, 124))
+                .addContainerGap(371, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void ussersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ussersActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ussersActionPerformed
 
     /**
      * @param args the command line arguments
@@ -184,6 +155,5 @@ public class perfilAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     private java.awt.Label label1;
-    private javax.swing.JButton ussers;
     // End of variables declaration//GEN-END:variables
 }
