@@ -29,6 +29,9 @@ public class perfilAdmin extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         label1 = new java.awt.Label();
+        iconoAdmin = new javax.swing.JLabel();
+        cerrarSesion = new javax.swing.JButton();
+        iconoVE = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1300, 900));
@@ -38,20 +41,47 @@ public class perfilAdmin extends javax.swing.JFrame {
 
         label1.setFont(new java.awt.Font("Arial", 0, 36)); // NOI18N
         label1.setForeground(new java.awt.Color(255, 255, 255));
-        label1.setText("TITULO");
+        label1.setText("MI PERFIL");
+
+        iconoAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconA.png"))); // NOI18N
+
+        cerrarSesion.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cerrarSesion.setForeground(new java.awt.Color(255, 255, 255));
+        cerrarSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconoCerrar.png"))); // NOI18N
+        cerrarSesion.setText("Cerrar Sesión");
+        cerrarSesion.setContentAreaFilled(false);
+        cerrarSesion.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+
+        iconoVE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/LogoVE.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(564, 564, 564)
+                .addGap(74, 74, 74)
+                .addComponent(iconoVE)
+                .addGap(440, 440, 440)
                 .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(563, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(iconoAdmin)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 268, Short.MAX_VALUE)
+                .addComponent(cerrarSesion)
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(label1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 77, Short.MAX_VALUE)
+            .addComponent(label1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(cerrarSesion)
+                    .addComponent(iconoAdmin))
+                .addContainerGap())
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(iconoVE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -64,7 +94,7 @@ public class perfilAdmin extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 601, Short.MAX_VALUE))
+                .addContainerGap(608, Short.MAX_VALUE))
         );
 
         pack();
@@ -106,6 +136,9 @@ public class perfilAdmin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton cerrarSesion;
+    private javax.swing.JLabel iconoAdmin;
+    private javax.swing.JLabel iconoVE;
     private javax.swing.JPanel jPanel2;
     private java.awt.Label label1;
     // End of variables declaration//GEN-END:variables
