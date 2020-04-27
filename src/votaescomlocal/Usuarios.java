@@ -27,6 +27,7 @@ public class Usuarios extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDialog1 = new javax.swing.JDialog();
         jPanel2 = new javax.swing.JPanel();
         label1 = new java.awt.Label();
         iconoAdmin = new javax.swing.JLabel();
@@ -41,6 +42,19 @@ public class Usuarios extends javax.swing.JFrame {
         btnBuscar = new javax.swing.JButton();
         btnEliminarUsuario = new javax.swing.JButton();
         btnModificarUsuario = new javax.swing.JButton();
+
+        jDialog1.setTitle("Modificar Datos");
+
+        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
+        jDialog1.getContentPane().setLayout(jDialog1Layout);
+        jDialog1Layout.setHorizontalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jDialog1Layout.setVerticalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1200, 700));
@@ -157,6 +171,11 @@ public class Usuarios extends javax.swing.JFrame {
         btnModificarUsuario.setText("Modificar Usuario");
         btnModificarUsuario.setBorderPainted(false);
         btnModificarUsuario.setMargin(new java.awt.Insets(14, 14, 14, 14));
+        btnModificarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModificarUsuarioActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -214,7 +233,7 @@ public class Usuarios extends javax.swing.JFrame {
                         .addComponent(btnEliminarUsuario)
                         .addGap(62, 62, 62)
                         .addComponent(btnModificarUsuario)))
-                .addContainerGap(78, Short.MAX_VALUE))
+                .addContainerGap(153, Short.MAX_VALUE))
         );
 
         pack();
@@ -223,6 +242,10 @@ public class Usuarios extends javax.swing.JFrame {
     private void jtDatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtDatoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jtDatoActionPerformed
+
+    private void btnModificarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnModificarUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -269,6 +292,7 @@ public class Usuarios extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbTipoUsuario;
     private javax.swing.JLabel iconoAdmin;
     private javax.swing.JLabel iconoVE;
+    private javax.swing.JDialog jDialog1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
