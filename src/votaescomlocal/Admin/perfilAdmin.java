@@ -160,7 +160,9 @@ public class perfilAdmin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void usuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuariosActionPerformed
-        // TODO add your handling code here:
+        Usuarios users = new Usuarios();
+        users.setVisible(true);
+        users.dispose();
     }//GEN-LAST:event_usuariosActionPerformed
 
     private void votacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_votacionesActionPerformed
