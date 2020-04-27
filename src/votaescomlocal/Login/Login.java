@@ -4,9 +4,6 @@
  * and open the template in the editor.
  */
 package votaescomlocal.Login;
-
-import java.awt.Toolkit;
-import java.awt.event.WindowEvent;
 import votaescomlocal.Usuario.ModuloGeneral;
 import votaescomlocal.Register.Registro;
 
