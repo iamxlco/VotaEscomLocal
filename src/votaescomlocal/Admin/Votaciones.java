@@ -112,6 +112,11 @@ public class Votaciones extends javax.swing.JFrame {
 
         label3.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
         label3.setText("+");
+        label3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                label3MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -184,6 +189,12 @@ public class Votaciones extends javax.swing.JFrame {
         admin.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel9MouseClicked
+
+    private void label3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_label3MouseClicked
+        NuevaVotacion nueva = new NuevaVotacion();
+        nueva.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_label3MouseClicked
 
     /**
      * @param args the command line arguments
