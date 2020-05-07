@@ -138,7 +138,6 @@ public class Registro extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel5.setText("Contraseña");
 
-        jtPass.setText("jPasswordField1");
         jtPass.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(96, 182, 240), 1, true));
 
         jLabel7.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
@@ -154,8 +153,12 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
-        jtCPass.setText("jPasswordField1");
         jtCPass.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(96, 182, 240)));
+        jtCPass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtCPassActionPerformed(evt);
+            }
+        });
 
         jtNFC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(96, 182, 240)));
 
@@ -291,6 +294,10 @@ public class Registro extends javax.swing.JFrame {
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jtCPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtCPassActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtCPassActionPerformed
 
     /**
      * @param args the command line arguments
