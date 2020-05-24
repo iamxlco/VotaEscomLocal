@@ -13,9 +13,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
-import net.sourceforge.jdatepicker.impl.JDatePanelImpl;
-import net.sourceforge.jdatepicker.impl.JDatePickerImpl;
-import net.sourceforge.jdatepicker.impl.UtilDateModel;
 import votaescomlocal.Usuario.ModuloGeneral;
 
 /**
@@ -30,11 +27,6 @@ public class Registro extends javax.swing.JFrame {
     public Registro() {
         initComponents();
         
-        UtilDateModel model = new UtilDateModel();
-        JDatePanelImpl datePanel = new JDatePanelImpl(model);
-        JDatePickerImpl datePicker = new JDatePickerImpl(datePanel);
-        
-        jPanel4.add(datePicker);
     }
 
     /**
