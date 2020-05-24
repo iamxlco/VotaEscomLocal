@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package votaescomlocal.log;
+import java.awt.Color;
 import plugins.TextPrompt;
 import votaescomlocal.Admin.perfilAdmin;
 import votaescomlocal.Usuario.ModuloGeneral;
@@ -13,7 +14,9 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         TextPrompt userPlaceHolder = new TextPrompt("Usuario", jTextField1);
+        userPlaceHolder.setForeground(Color.GRAY);
         TextPrompt passPlaceHolder = new TextPrompt("Contraseña", jPasswordField1);
+        passPlaceHolder.setForeground(Color.GRAY);
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
